@@ -84,7 +84,7 @@ export default function Header() {
                     Feature
                   </Link>
 
-                  {/* <Link
+                  <Link
                     to="Portfol"
                     spy={true}
                     smooth={true}
@@ -93,7 +93,7 @@ export default function Header() {
                     className="header-link"
                   >
                     Portfol
-                  </Link> */}
+                  </Link>
 
                   <Link
                     to="Resume"

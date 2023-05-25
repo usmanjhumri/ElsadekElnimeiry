@@ -20,7 +20,12 @@
 }
 @media screen and (max-width: 600px) {
   .tabs {
-    padding: 1.5rem 0.2rem !important;
+    /* padding: 1.5rem 0.2rem !important; */
+    flex-direction: column !important;
+    flex-wrap: wrap;
+  }
+  .span-degree-styling {
+    padding: 0.1rem !important;
   }
 }
 .css-1jwu69e-MuiButtonBase-root-MuiTab-root.Mui-selected {
@@ -44,6 +49,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .tabs:hover {

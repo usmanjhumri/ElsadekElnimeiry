@@ -1,13 +1,4 @@
-import {
-  Box,
-  Button,
-  Container,
-  Divider,
-  Grid,
-  Link,
-  TextField,
-  Typography,
-} from "@mui/material";
+
 import React from "react";
 import { Fade } from "react-reveal";
 import "./Contact.css";
@@ -19,6 +10,7 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useForm } from "react-hook-form";
+import { Box, Button, Container, Divider, Grid, Link, Typography } from "@mui/material";
 // const ErrorText = ({ text }) => {
 //   return (
 //     <Typography sx={{ fontSize: '9px', color: 'red', marginBottom: '8px' }}>
@@ -109,7 +101,7 @@ const Contact = () => {
               component={"h1"}
               sx={{
                 fontWeight: 700,
-                fontSize: { xs: "2.5rem", md: "4rem" },
+                fontSize: { xs: "2rem", md: "4rem" },
                 color: "#c4cfde",
                 fontFamily: "Montserrat, sans-serif",
                 lineHeight: 1.2,
@@ -247,7 +239,7 @@ const Contact = () => {
                             </Typography>
 
                             <Box sx={{
-                              textAlign: "left",
+                              // textAlign: "left",
                               display: "flex",
                               alignItems: "center",
                               justifyContent: "space-between"
@@ -267,10 +259,7 @@ const Contact = () => {
                                   borderRadius: "8px",
                                   transition: "all .5s ease",
                                   Size: "14px",
-                                  //   "&:hover":{
-                                  //     background:"linear-gradient(to right bottom,#ffffff,#00ff40)",
 
-                                  // }
 
                                 }} />
                               </Link>

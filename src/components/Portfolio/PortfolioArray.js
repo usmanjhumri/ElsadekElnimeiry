@@ -19,12 +19,12 @@ const portfolioArray = [
     projectdetail:
       "this is webanimation project using react js and material ui",
   },
-  {
-    src: "https://usman-restaurant.netlify.app/",
-    technology: "pure HTML,CSS & JS",
-    projectname: "Restaurant System",
-    projectdetail: "this site is made only HTML CSS and JS",
-  },
+  // {
+  //   src: "https://usman-restaurant.netlify.app/",
+  //   technology: "pure HTML,CSS & JS",
+  //   projectname: "Restaurant System",
+  //   projectdetail: "this site is made only HTML CSS and JS",
+  // },
   {
     src: "https://recruiteq.netlify.app/",
     technology: "REACT & MUI",
@@ -32,13 +32,13 @@ const portfolioArray = [
     projectdetail:
       "To complete this project using React TS and MUI. Recruiteq project is client base project",
   },
-  {
-    src: "https://medicinefinal.netlify.app/",
-    technology: "REACT & MUI",
-    projectname: "Medicine Donation",
-    projectdetail:
-      "This is front end page of Medicine donation. this project is client base project",
-  },
+  // {
+  //   src: "https://medicinefinal.netlify.app/",
+  //   technology: "REACT & MUI",
+  //   projectname: "Medicine Donation",
+  //   projectdetail:
+  //     "This is front end page of Medicine donation. this project is client base project",
+  // },
   {
     src: "https://bitcoin_intro.surge.sh/",
     technology: "REACT & MUI",

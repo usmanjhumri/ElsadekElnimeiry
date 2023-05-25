@@ -224,7 +224,8 @@ function Home() {
                           padding: "1rem 0.5rem",
                           borderRadius: "8px",
                           transition: "all 0.5s",
-                          cursor: "pointer"
+                          cursor: "pointer",
+                          textAlign: "center"
 
                         }} className='send-btn' id='send-masg'>
                           Download Resume

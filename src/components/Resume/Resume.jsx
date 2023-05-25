@@ -1,15 +1,9 @@
-import { Box, Button, Container, Divider, Grid, Typography } from '@mui/material'
 import PropTypes from 'prop-types';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
+
 import React from 'react'
 import { Fade } from 'react-reveal'
 import './Resume.css'
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-import { TimelineConnector, TimelineContent, TimelineSeparator, TimelineDot, TimelineItem, Timeline } from '@material-ui/lab'
-import ProgressBar from '@ramonak/react-progress-bar';
-
+import { Box, Container, Divider, Grid, Tab, Tabs, Typography } from '@mui/material';
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -58,7 +52,7 @@ const Resume = () => {
               letterSpacing: "1px",
               marginBottom: "10px",
               textTransform: "uppercase",
-              fontSize: "14px",
+              fontSize: { md: "14px", xs: "12px" },
               fontWeight: 500,
               fontFamily: "Montserrat, sans-serif",
               textAlign: "center",
@@ -70,7 +64,7 @@ const Resume = () => {
           <Fade bottom>
             <Typography component={'h1'} sx={{
               fontWeight: 700,
-              fontSize: "60px",
+              fontSize: { md: "60px", xs: "30px" },
               color: "#c4cfde",
               fontFamily: "Montserrat, sans-serif",
               lineHeight: 1.2,
@@ -91,12 +85,13 @@ const Resume = () => {
                 <Tabs id='tabsname' value={value} onChange={handleChange} aria-label="basic tabs examplesss" className='usman'
                   TabIndicatorProps={{ sx: { display: 'none' } }}
                   sx={{
-                    flexWrap: "wrap",
+                    // flexWrap: "wrap",
                     boxShadow: " 10px 10px 19px #1c1e22,-10px -10px 19px #262a2e",
                     borderRadius: "10px",
                     background: "linear-gradient(145deg,#1e2024,#23272b)",
                     textAlign: "center",
                     margin: "16px 0px",
+                    flexDirection: { md: "auto", xs: "column" }
                   }}>
 
 
@@ -104,7 +99,7 @@ const Resume = () => {
 
                   <Tab sx={{ color: "#878e99", }} className='tabs tab1' value={0} label="Education" />
                   <Tab sx={{ color: "#878e99", }} className='tabs tab2' value={1} label="Technical Skills" />
-                  <Tab sx={{ color: "#878e99", }} className='tabs tab1' value={2} label="Professional Experience" />
+                  <Tab sx={{ color: "#878e99", }} className='tabs tab3' value={2} label="Professional Experience" />
                 </Tabs>
 
 
@@ -364,7 +359,9 @@ const Resume = () => {
                         <Box sx={{
                           marginBottom: "15px"
                         }}>
-                          <h1 className='h1-styling'>EverCommerce Inc.</h1>
+                          <Typography component='h1' sx={{
+                            fontSize: { md: "24px", xs: "18px" }
+                          }} className='h1-styling'>EverCommerce Inc.</Typography>
                           <Typography className='span-styling' sx={{ textAlign: "left" }}>IT Administrator</Typography>
                         </Box>
                         <Box sx={{
@@ -378,8 +375,8 @@ const Resume = () => {
 
 
                       </Box>
-                      <p style={{
-                        fontSize: "18px",
+                      <Typography sx={{
+                        fontSize: { md: "18px", xs: "14px" },
                         color: "#878e99",
                         transition: "0.4s",
                         textAlign: "left"
@@ -393,7 +390,7 @@ const Resume = () => {
                         Maintain essential IT operations, including operating systems, security tools, applications, servers, email systems, laptops, desktops, software, and hardware. <br />
                         Experience in project management, application design and integration, and cloud computing (specifically Microsoft Azure)
 
-                      </p>
+                      </Typography>
 
 
                     </Box>
@@ -423,13 +420,17 @@ const Resume = () => {
                         <Box sx={{
                           marginBottom: "15px"
                         }}>
-                          <h1 className='h1-styling'>Apple, Inc.</h1>
                           <Typography sx={{
-                            color: "#c4cfde"
+                            fontSize: { md: "24px", xs: "18px" }
+                          }} className='h1-styling'>Apple, Inc.</Typography>
+                          <Typography sx={{
+                            color: "#c4cfde",
+                            fontSize: { md: "18px", xs: "14px" },
+                            textAlign: "left"
                           }}>
                             Minneapolis, Minnesota
                           </Typography>
-                          <Typography className='span-styling' sx={{ textAlign: "left" }}>Service Desk Technician</Typography>
+                          <Typography className='span-styling' sx={{ textAlign: "left", fontSize: { md: "16px", xs: "14px" } }}>Service Desk Technician</Typography>
                         </Box>
                         <Box sx={{
                           display: "flex",
@@ -442,8 +443,8 @@ const Resume = () => {
 
 
                       </Box>
-                      <p style={{
-                        fontSize: "18px",
+                      <Typography sx={{
+                        fontSize: { md: "18px", xs: "14px" },
                         color: "#878e99",
                         transition: "0.4s",
                         textAlign: "left"
@@ -456,7 +457,7 @@ const Resume = () => {
                         Created and maintained internal and external documentation related to technical topic specialty<br />
 
 
-                      </p>
+                      </Typography>
 
 
                     </Box>
@@ -486,9 +487,11 @@ const Resume = () => {
                         <Box sx={{
                           marginBottom: "15px"
                         }}>
-                          <h1 className='h1-styling'>IBM – Rochester, Minnesota</h1>
+                          <Typography sx={{
+                            fontSize: { md: "24px", xs: "16px" }
+                          }} className='h1-styling'>IBM–Rochester Minnesota</Typography>
 
-                          <Typography className='span-styling' sx={{ textAlign: "left" }}>Desktop Support Technician</Typography>
+                          <Typography className='span-styling' sx={{ textAlign: "left", fontSize: { md: "18px", xs: "14px" } }}>Desktop Support Technician</Typography>
                         </Box>
                         <Box sx={{
                           display: "flex",
@@ -501,8 +504,8 @@ const Resume = () => {
 
 
                       </Box>
-                      <p style={{
-                        fontSize: "18px",
+                      <Typography sx={{
+                        fontSize: { md: "18px", xs: "14px" },
                         color: "#878e99",
                         transition: "0.4s",
                         textAlign: "left"
@@ -515,7 +518,7 @@ const Resume = () => {
                         Troubleshoot system failures or bugs and provide solutions to restore functionality
 
 
-                      </p>
+                      </Typography>
 
 
                     </Box>
@@ -548,11 +551,13 @@ const Resume = () => {
                         <Box sx={{
                           marginBottom: "15px"
                         }}>
-                          <h3 className='h1-styling'>Faegre Drinker LLP </h3>
-                          <Typography sx={{ color: "#c4cfde" }}>
+                          <Typography sx={{
+                            fontSize: { md: "24px", xs: "18px" }
+                          }} className='h1-styling'>Faegre Drinker LLP </Typography>
+                          <Typography sx={{ color: "#c4cfde", fontSize: { md: "18px", xs: "14px" }, textAlign: "left" }}>
                             (previously Faegre Baker Daniels LLP)
                           </Typography>
-                          <Typography className='span-styling' sx={{ textAlign: "left" }}>Service Desk Analyst</Typography>
+                          <Typography className='span-styling' sx={{ textAlign: "left", fontSize: { md: "18px", xs: "12px" } }}>Service Desk Analyst</Typography>
                         </Box>
                         <Box sx={{
                           display: "flex",
@@ -566,8 +571,8 @@ const Resume = () => {
 
 
                       </Box>
-                      <p style={{
-                        fontSize: "18px",
+                      <Typography sx={{
+                        fontSize: { md: "18px", xs: "14px" },
                         color: "#878e99",
                         transition: "0.4s",
                         textAlign: "left"
@@ -581,7 +586,7 @@ const Resume = () => {
                         Saw issues through end-to-end with high customer satisfaction (per customer surveys) <br />
                         Oversaw and ran the Service Desk’s VIP support process single-handedly
 
-                      </p>
+                      </Typography>
 
 
                     </Box>
@@ -612,8 +617,10 @@ const Resume = () => {
                         <Box sx={{
                           marginBottom: "15px"
                         }}>
-                          <h1 className='h1-styling'>ECMC – Oakdale, Minnesota </h1>
-                          <Typography className='span-styling' sx={{ textAlign: "left" }}>Service Desk Technician</Typography>
+                          <Typography sx={{
+                            fontSize: { md: "24px", xs: "16px" }
+                          }} className='h1-styling'>ECMC–Oakdale, Minnesota </Typography>
+                          <Typography className='span-styling' sx={{ textAlign: "left", fontSize: { md: "18px", xs: "14px" } }}>Service Desk Technician</Typography>
                         </Box>
                         <Box sx={{
                           display: "flex",
@@ -626,8 +633,8 @@ const Resume = () => {
 
 
                       </Box>
-                      <p style={{
-                        fontSize: "18px",
+                      <Typography sx={{
+                        fontSize: { md: "18px", xs: "14px" },
                         color: "#878e99",
                         transition: "0.4s",
                         textAlign: "left"
@@ -642,7 +649,7 @@ const Resume = () => {
                         Investigates and implements ways of reducing calls to the Service Desk.<br />
                         Helps with unscheduled system outages or with unresolved issues to ensure timely updates to customers.<br />
                         Consulting with other vendors to identify best approaches to resolving complex issues
-                      </p>
+                      </Typography>
 
 
                     </Box>

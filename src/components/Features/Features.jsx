@@ -39,7 +39,7 @@ function Features() {
 
                             <Typography variant='h1' component={'h2'} sx={{
                                 fontWeight: 700,
-                                fontSize: "60px",
+                                fontSize: { md: "60px", xs: "30px" },
                                 lineHeight: 1.2,
                                 fontFamily: "Montserrat, sans-serif",
                                 textTransform: "capitalize",

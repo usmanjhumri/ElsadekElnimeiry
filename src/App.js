@@ -1,7 +1,7 @@
 import "./App.css";
 import Home from "./components/Home/Home";
 import Features from "./components/Features/Features";
-// import Portfolio from './components/Portfolio/Portfolio';
+import Portfolio from "./components/Portfolio/Portfolio";
 import Resume from "./components/Resume/Resume";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
@@ -14,7 +14,7 @@ function App() {
       <Header />
       <Home />
       <Features />
-      {/* <Portfolio/> */}
+      <Portfolio />
       <Resume />
       <Contact />
 
