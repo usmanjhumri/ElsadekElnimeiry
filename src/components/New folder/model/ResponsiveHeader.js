@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Container,
-  Divider,
-  Drawer,
-  SwipeableDrawer,
-  Typography,
-} from "@mui/material";
+import { Box, Container, Divider, Drawer } from "@mui/material";
 
 import { AiOutlineMail } from "react-icons/ai";
 import { Link } from "react-scroll";
@@ -20,6 +13,7 @@ export default function ResponsiveHeader({ state, setstate }) {
       className="drawer-color"
       style={{
         marginTop: "1rem",
+        padding: "2rem",
       }}
     >
       <Drawer
@@ -35,6 +29,7 @@ export default function ResponsiveHeader({ state, setstate }) {
             //  padding: "20px 3rem",
             // background:"#212328"
             textAlign: "center",
+            padding: "2rem",
           }}
         >
           <Box
@@ -125,7 +120,7 @@ export default function ResponsiveHeader({ state, setstate }) {
               }}
             />
           </Container>
-          <Box
+          {/* <Box
             sx={{
               display: "inline-block",
               alignItems: "left",
@@ -173,7 +168,7 @@ export default function ResponsiveHeader({ state, setstate }) {
                   color: "#ff014f",
                   background: "linear-gradient(145deg,#1e2024,#23272b)",
                   boxShadow: "10px 10px 19px #1c1e22,-10px -10px 19px #262a2e",
-                  padding: "1rem 0.5rem",
+                  // padding: "1rem 0.5rem",
                   borderRadius: "8px",
                   transition: "all 0.5s",
                   cursor: "pointer",
@@ -184,7 +179,7 @@ export default function ResponsiveHeader({ state, setstate }) {
                 Download Resume
               </Link>
             </Box>
-          </Box>
+          </Box> */}
         </Box>
       </Drawer>
     </div>

@@ -51,12 +51,12 @@ const portfolioArray = [
     projectname: "TENUP",
     projectdetail: "Using React js and Material UI to complete this project",
   },
-  {
-    src: "https://quizapp-typescript.netlify.app/",
-    technology: "REACT TS & MUI",
-    projectname: "Quiz App in Typescript",
-    projectdetail:
-      "Using React TS and MUI to complete this project. using this project a user take quiz and solve quiz and also check score.",
-  },
+  // {
+  //   src: "https://quizapp-typescript.netlify.app/",
+  //   technology: "REACT TS & MUI",
+  //   projectname: "Quiz App in Typescript",
+  //   projectdetail:
+  //     "Using React TS and MUI to complete this project. using this project a user take quiz and solve quiz and also check score.",
+  // },
 ];
 export default portfolioArray;
