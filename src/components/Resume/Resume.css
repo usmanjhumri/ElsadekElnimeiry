@@ -1,0 +1,215 @@
+.css-heg063-MuiTabs-flexContainer {
+  /* display: flex; */
+  justify-content: space-between;
+
+  border: 0 none;
+  border-radius: 10px;
+  /* padding: 10px 30px; */
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+}
+.tabs {
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  outline: none !important;
+  transition: all 0.5s !important;
+  text-transform: capitalize !important;
+  border-radius: 10px !important;
+  border: none !important;
+  padding: 1.8rem 2rem !important;
+}
+@media screen and (max-width: 600px) {
+  .tabs {
+    padding: 1.5rem 0.2rem !important;
+  }
+}
+.css-1jwu69e-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #f9004d !important;
+  /* padding: 10px 30px; */
+
+  background: linear-gradient(145deg, #1e2024, #23272b) !important;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e !important;
+}
+.Mui-selected {
+  color: #f9004d !important;
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+}
+.tab__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.MuiTabs-flexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tabs:hover {
+  color: #f9004d !important;
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+}
+
+.MuiTabs-indicator {
+  display: none;
+}
+.h1-styling {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 39px;
+  margin-bottom: 7px;
+  transition: 0.4s;
+  color: #c4cfde;
+  text-align: left;
+  word-break: break-all;
+  margin: 0;
+}
+.span-styling {
+  color: #7c838e;
+  display: block;
+  font-size: 14px;
+}
+.span-degree-styling {
+  display: block;
+  font-size: 14px;
+  padding: 0 15px;
+  /* height: 36px; */
+  border-radius: 6px;
+  color: #f9004d;
+  font-weight: 700;
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  transition: 0.4s;
+  margin-bottom: 1rem;
+}
+.progressbar {
+  background: #212428;
+  border-radius: 10px;
+}
+
+.title-text {
+  text-align: center;
+  background-color: crimson;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 50px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.skill-box {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.skill-box .title {
+  text-align: left;
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  color: #c3cedd !important;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.skill-box .skill-bar {
+  height: 8px;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 6px;
+  background: #212428;
+  box-shadow: inset 8px 8px 16px rgb(0 0 0 / 46%),
+    inset -8px -8px 16px rgb(56 62 69 / 46%);
+  padding: 3px;
+}
+
+.skill-box .skill-per {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #f02981 0%, #c81901 100%);
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 0;
+}
+
+.skill-per.css {
+  width: 100%;
+  animation-delay: 0.1s;
+}
+
+.skill-per.javascript {
+  width: 100%;
+  animation-delay: 0.2s;
+}
+.skill-per.nodejs {
+  width: 100%;
+  animation-delay: 0.3s;
+}
+.skill-per.reactjs {
+  width: 100%;
+  animation-delay: 0.3s;
+}
+.skill-per.mui {
+  width: 100%;
+  animation-delay: 0.3s;
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.skill-per .tooltip {
+  position: absolute;
+  right: -14px;
+  top: -20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #c3cedd;
+  letter-spacing: 2px;
+
+  z-index: 1;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.cv-btn {
+  text-decoration: none;
+  margin-top: 0.5rem;
+  font-size: 14px;
+  padding: 0.7rem 15px;
+  /* height: 36px; */
+  border-radius: 6px;
+  /* color: #f9004d; */
+  color: #878e99;
+  font-weight: 500;
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  transition: 0.4s;
+}
+.cv-btn:hover {
+  color: #f9004d;
+  background: linear-gradient(to right bottom, #212428, #16181c);
+  font-weight: 700;
+  transform: translateY(-9px);
+}

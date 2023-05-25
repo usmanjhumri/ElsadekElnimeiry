@@ -1,0 +1,58 @@
+.projectname .projectName:hover{
+color: #f9004d;
+
+
+}
+.Modal{
+    padding: 60px 15px !important;
+}
+.projectName{
+    transition: all 0.5s ease-in-out;
+}
+.popup-link::after{
+                content: "";
+                position: absolute;
+                
+                transition:top 0.5s ease-in-out;
+                /* border-radius:5px; */
+            
+                position:absolute;
+}
+
+.popup-link:hover::after{
+    background: linear-gradient(to right bottom,#212428,#16181c);
+    top: -20px;
+}
+.cross::after{
+    content: "";
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    opacity: 1;
+    z-index: -1;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+}
+.cross:hover::after{
+    background: linear-gradient(to right bottom,#212428,#16181c);
+    color: #f9004d;
+}
+/* span{
+    transition: transform 0.5s ease-in-out !important;
+} */
+span:hover{
+    color: #f9004d !important;
+    font-weight: 800;
+    /* transform: translate(20px 20px) !important; */
+
+}
+/* .close{
+    transition: transform  0.5s ease-in-out;
+}
+.close:hover{
+} */

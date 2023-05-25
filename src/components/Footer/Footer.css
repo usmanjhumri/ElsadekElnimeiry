@@ -1,0 +1,135 @@
+.moon1 {
+  max-width: 370px;
+  z-index: 3;
+  position: absolute;
+  right: 20px;
+  width: 100%;
+  vertical-align: middle;
+  /* box-shadow: 0 0 90px 0px #fff; */
+  /* background: none; */
+}
+.bg-img {
+  overflow: hidden;
+}
+@media (max-width: 400px) {
+  .moon1 {
+    max-width: 370px;
+    z-index: 3;
+    position: absolute;
+    right: 4px;
+    width: 100%;
+    vertical-align: middle;
+  }
+}
+
+.moon1 {
+  -webkit-animation: App-logo-spin 200s linear infinite;
+  animation: App-logo-spin 200s linear infinite;
+}
+
+@keyframes App-logo-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
+.rn-footer-area {
+  position: relative;
+  z-index: 9;
+}
+.rn-section-gap {
+  padding: 100px 0;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(0 * -1);
+  margin-right: calc(1.5rem * -0.5);
+  margin-left: calc(1.5rem * -0.5);
+}
+@media (min-width: 992px) {
+  .col-lg-12 {
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+.text-center {
+  text-align: center !important;
+}
+#flogo {
+  width: 100%;
+  max-width: 170px;
+  border: 6px solid #f9004d;
+  border-radius: 50%;
+  /* overflow: hidden; */
+}
+#flogo {
+  -webkit-animation: App-logo-spin none;
+  animation: App-logo-spin none;
+}
+.footer-area .discription {
+  font-size: 17px;
+  color: #878e99;
+}
+@media (max-width: 900px) {
+  .xs-black {
+    color: black !important;
+    font-weight: 700;
+  }
+}
+.mt-30 {
+  margin-top: 5rem !important;
+}
+.mt-30 a {
+  color: #878e99;
+  transition: all 0.5s;
+}
+.mt-30 a:hover {
+  color: #f9004d;
+}
+/* .smooth-scroll{
+    font-size: 14px !important;
+    cursor: pointer !important;
+    width: 50px !important;
+    height: 50px !important;
+    line-height: 46px !important;
+    border-radius: 50% !important;
+    background: #212428 !important;
+    text-align: center !important;
+    z-index: 999 !important;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e !important;
+    transition: all 0.4s !important;
+ } */
+.smooth-scroll:hover {
+  background: linear-gradient(to right bottom, #212428, #16181c) !important;
+}

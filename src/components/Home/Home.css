@@ -1,0 +1,53 @@
+.link {
+  transition: background-color 5s ease-in-out !important;
+}
+.link:hover {
+  background-color: linear-gradient(to right bottom, #ffffff, #00ff40);
+  transform: translateY(-10px) !important;
+  /* transition: all 5s ease-out; */
+}
+/* .find_me:hover{
+    background: linear-gradient(to right bottom,#212428,#16181c),
+} */
+#linkedin {
+  background: linear-gradient(to right bottom, #212428, #16181c);
+  transition: transform 0.8s !important;
+}
+#linkedin:hover {
+  transform: translateY(-10px) !important;
+}
+.find_me {
+  transition: all 0.9s ease-in-out !important;
+}
+.find_me:hover {
+  top: -10px;
+}
+.thumbnail {
+  position: relative;
+  z-index: 2;
+}
+.thumbnail::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: calc(100% - 130%);
+  left: 50%;
+  bottom: 0;
+  border-radius: 6px;
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+}
+.M.Usman {
+  font-family: Montserrat !important;
+}
+.send-btn {
+  transition: all 0.5s ease !important;
+  /* width: 100%; */
+}
+.send-btn:hover {
+  background: linear-gradient(to right bottom, #212428, #16181c);
+}
+#send-masg:hover {
+  transform: translateY(-10px);
+}
