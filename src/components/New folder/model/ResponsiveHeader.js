@@ -84,7 +84,7 @@ export default function ResponsiveHeader({ state, setstate }) {
                 duration={500}
                 className="header-links"
               >
-                Portfol
+                Portfolio
               </Link>
 
               <Link
