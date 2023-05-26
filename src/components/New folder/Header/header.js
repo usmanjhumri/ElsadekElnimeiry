@@ -92,7 +92,7 @@ export default function Header() {
                     duration={500}
                     className="header-link"
                   >
-                    Portfol
+                    Portfolio
                   </Link>
 
                   <Link

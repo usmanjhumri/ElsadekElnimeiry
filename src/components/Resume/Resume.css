@@ -1,7 +1,7 @@
 .css-heg063-MuiTabs-flexContainer {
-  /* display: flex; */
+  display: flex;
   justify-content: space-between;
-
+  flex-wrap: wrap;
   border: 0 none;
   border-radius: 10px;
   /* padding: 10px 30px; */
@@ -27,10 +27,22 @@
   .span-degree-styling {
     padding: 0.1rem !important;
   }
+  .css-heg063-MuiTabs-flexContainer {
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+  }
+  .Mui-selected {
+    width: 100%;
+  }
+  .tabs:hover {
+    width: 100%;
+    color: #f9004d !important;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  }
 }
 .css-1jwu69e-MuiButtonBase-root-MuiTab-root.Mui-selected {
   color: #f9004d !important;
-  /* padding: 10px 30px; */
 
   background: linear-gradient(145deg, #1e2024, #23272b) !important;
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e !important;
