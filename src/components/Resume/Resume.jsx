@@ -42,10 +42,7 @@ const Resume = () => {
   return (
     <>
       <Box mt={12} id='Resume'>
-        <Container sx={{
-          marginBottom: "8rem"
-
-        }}>
+        <Container sx={{ marginBottom: "8rem" }}>
           <Fade bottom>
             <Typography sx={{
               color: "#f9004d",
@@ -73,8 +70,6 @@ const Resume = () => {
               My Resume
             </Typography>
           </Fade>
-
-
 
           <Grid container>
 

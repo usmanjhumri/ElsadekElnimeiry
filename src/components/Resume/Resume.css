@@ -19,11 +19,6 @@
   padding: 1.8rem 2rem !important;
 }
 @media screen and (max-width: 600px) {
-  .tabs {
-    /* padding: 1.5rem 0.2rem !important; */
-    flex-direction: column !important;
-    flex-wrap: wrap;
-  }
   .span-degree-styling {
     padding: 0.1rem !important;
   }
